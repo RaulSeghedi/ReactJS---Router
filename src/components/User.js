@@ -12,7 +12,3 @@ export class User extends React.Component {
         );
     }
 }
-
-User.PropTypes = {
-    historyBrowser: React.PropTypes.func
-}
