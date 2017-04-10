@@ -1,6 +1,8 @@
 import React from 'react';
 
+
 export class User extends React.Component {
+
     render() {
         return (
             <div>
@@ -9,4 +11,8 @@ export class User extends React.Component {
             </div>
         );
     }
+}
+
+User.PropTypes = {
+    historyBrowser: React.PropTypes.func
 }
