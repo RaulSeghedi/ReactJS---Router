@@ -8,7 +8,6 @@ export const Header = (props) => {
                     <div className="navbar-header">
                         <ul className="nav navbar-nav">
                             <li><Link to="/home">Home</Link></li>
-                            <li><Link to="/user">User</Link></li>
                             <li><Link to="/projects">Projects</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
