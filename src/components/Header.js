@@ -9,6 +9,7 @@ export const Header = (props) => {
                         <ul className="nav navbar-nav">
                             <li><Link to="/home">Home</Link></li>
                             <li><Link to="/projects">Projects</Link></li>
+                            <li><Link to="/tasks">Tasks</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
