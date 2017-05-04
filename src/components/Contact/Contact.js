@@ -23,9 +23,10 @@ export class Contact extends React.Component {
     render() {
         return (
             <div>
-                <h3>The Contact Page</h3>
+                <h3>Contact Page</h3>
                 <p>E-mail: {this.state.initialEmail}</p>
                 <hr/>
+                <h3>Change E-mail</h3>
                 <input
                     type="text"
                     value={this.state.initialEmail}

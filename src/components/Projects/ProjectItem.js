@@ -7,8 +7,11 @@ class ProjectItem extends Component {
     }
 
     render() {
+        const style = {
+            listStyle: 'none'
+        }
         return (
-            <li>
+            <li style={style}>
                 <strong>{this.props.project.title} - </strong>{this.props.project.category} <a href="#" onClick={this.deleteProject.bind(this, this.props.project.id)}> - DEL</a>
             </li>
         )

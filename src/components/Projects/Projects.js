@@ -47,6 +47,7 @@ class Projects extends Component {
     }
 
     render() {
+
         let projectItems;
         if (this.state.projects) {
             projectItems = this.state.projects.map(project => {
@@ -57,6 +58,7 @@ class Projects extends Component {
         };
         return (
             <div>
+                <h3>Projects Page</h3>
                 <AddProject addProject={this.handleAddProject.bind(this)}/>
                 <h3>Latest projects</h3>
                 {projectItems}
