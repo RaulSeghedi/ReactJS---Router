@@ -11,21 +11,34 @@ class Tasks extends React.Component {
     }
 
     componentWillMount(){
-        this.setState({
-            tasks: ['first task', 'second task']
-        })
+        let task = localStorage.getItem('storedTasks');
+        if (task){
+            this.setState({
+                tasks: JSON.parse(task)
+            })
+        }
+        // this.setState({
+        //     tasks: ['first task', 'second task']
+        // })
     }
 
     addTask(task){
         let tasks = this.state.tasks;
         tasks.push(task);
         this.setState({tasks: tasks})
+        this.updateLocalStorage(tasks)
     }
 
     removeTask(task){
         let tasks = this.state.tasks;
         tasks.splice(tasks.indexOf(task), 1);
         this.setState({tasks: tasks});
+        this.updateLocalStorage(tasks)
+    }
+
+    updateLocalStorage(updatedTask){
+        console.log('task updated');
+        localStorage.setItem('storedTasks', JSON.stringify(updatedTask));
     }
 
     render() {
